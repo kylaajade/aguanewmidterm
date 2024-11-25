@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Montserrat", serif;
+    background-color: #f8e0e6; /* Pastel Pink Background */
+    color: #4d4d4d; /* Darker grey text for contrast */
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.admin-h1 {
+    font-size: 2em;
+    color: #4d4d4d; /* Dark grey for headings */
+    margin-bottom: 20px;
+}
+
+/* Cart/Logout Link */
+.admin-cart {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.admin-cart a {
+    color: #8d8db2; /* Pastel lavender link color */
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.admin-cart a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+.admin-form {
+    background-color: #f1f9f1; /* Very light pastel green background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.admin-form input[type="text"],
+.admin-form textarea,
+.admin-form input[type="number"],
+.admin-form select,
+.admin-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d3d3d3; /* Light grey borders */
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.admin-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b8e0d2; /* Pastel green background */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-form button:hover {
+    background-color: #a0d3c7; /* Slightly darker pastel green for hover */
+}
+
+/* Table Styles */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #f4b8d8; /* Pastel pink for table header */
+    color: white;
+    font-weight: bold;
+}
+
+.admin-table td {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.admin-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Product Image */
+.admin-product-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Action Buttons */
+.admin-actions form {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.admin-actions button {
+    background-color: #f28f8f; /* Pastel red for action buttons */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.admin-actions button:hover {
+    background-color: #f15b5b; /* Slightly darker pastel red for hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .admin-form,
+    .admin-table {
+        padding: 10px;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 10px;
+    }
+}

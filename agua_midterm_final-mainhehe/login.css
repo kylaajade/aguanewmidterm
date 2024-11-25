@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(135deg, #fbd8e6 0%, #a7f3d0 100%); /* Pastel pink to pastel green gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+.login-container {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  backdrop-filter: blur(10px); /* Blur the background behind the form */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #f8d7da; /* Pastel pink color */
+}
+
+.login-container label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  color: #f3f4f6; /* Light grey */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #a7f3d0; /* Light pastel green border */
+  border-radius: 8px;
+  background-color: #f3f4f6; /* Light pastel grey background */
+  color: #333; /* Darker text color */
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #6ee7b7; /* Pastel green on focus */
+  outline: none;
+}
+
+.login-container .login-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #f8d7da 0%, #a7f3d0 100%); /* Pastel pink to pastel green gradient */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background 0.3s ease;
+}
+
+.login-container .login-button:hover {
+  background: linear-gradient(135deg, #f3b1b3 0%, #6ee7b7 100%); /* Lighter pastel pink to green gradient */
+}
+
+.error-message {
+  color: #ff6b6b; /* Error message in red */
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.login-container p {
+  color: #f3f4f6; /* Light grey text for additional information */
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+
+.login-container a {
+  color: #6ee7b7; /* Pastel green link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-container a:hover {
+  color: #f8d7da; /* Pastel pink hover color */
+  text-decoration: underline;
+}

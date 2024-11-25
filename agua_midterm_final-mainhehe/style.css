@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", serif;
+  background-color: #fef0f7; /* soft pastel pink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4a4a4a; /* dark grey for text */
+  padding: 20px;
+}
+
+.register-container {
+  background-color: #ffffff; /* white background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 28px;
+  color: #5d3f5f; /* muted dark pink */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Wrapper */
+.input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.input-wrapper div {
+  width: 100%;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #e8a9c3; /* pastel pink border */
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fce4ec; /* pastel pink background */
+}
+
+input:focus,
+select:focus {
+  border-color: #a8e6cf; /* pastel green focus border */
+  background-color: #ffffff;
+  outline: none;
+}
+
+button {
+  background-color: #a8e6cf; /* pastel green background */
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #81c784; /* slightly darker pastel green */
+}
+
+label {
+  font-size: 14px;
+  color: #5d3f5f; /* muted dark pink for label text */
+  margin-bottom: 5px;
+  display: block;
+}
+
+p {
+  font-size: 14px;
+  color: #7d5a6f; /* muted dark pink-gray */
+  text-align: center;
+}
+
+a {
+  color: #f8c8d1; /* pastel pink for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Success & Error Messages */
+.error-message,
+.success-message {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.error-message {
+  background-color: #f8c8d1; /* pastel pink background */
+  color: #721c24; /* red color for error */
+}
+
+.success-message {
+  background-color: #a8e6cf; /* pastel green background */
+  color: #155724; /* dark green color for success */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .input-wrapper {
+    flex-direction: column;
+  }
+
+  .input-wrapper div {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Larger Screens */
+@media (min-width: 1200px) {
+  .register-container {
+    padding: 40px;
+    max-width: 700px;
+  }
+}

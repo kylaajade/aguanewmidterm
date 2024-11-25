@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f0f7; /* Light pastel pink background */
+  color: #333;
+}
+
+header {
+  background-color: #a8d5ba; /* Pastel green */
+  color: white;
+  padding: 10px 0;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.mb-10 {
+  padding-bottom: 8rem;
+}
+
+.nav-links a:hover {
+  background-color: #f7c9d1; /* Soft pastel pink hover */
+  border-radius: 5px;
+}
+
+.cart {
+  padding-bottom: 8rem;
+}
+
+.cart a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cart a:hover {
+  color: #f7c9d1; /* Soft pastel pink hover */
+}
+
+main {
+  margin: 30px 0;
+  padding: 0 20px;
+}
+
+.cart h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #a8d5ba; /* Pastel green */
+}
+
+/* Cart table styling */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+  background-color: #f7f7f7; /* Soft pastel pink */
+  font-size: 1.2rem;
+}
+
+.cart-product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-table td form button {
+  background-color: #a8d5ba; /* Pastel green */
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-table td form button:hover {
+  background-color: #85c1a0; /* Lighter pastel green */
+}
+
+/* Quantity input styling */
+.quantity-form input[type="number"] {
+  width: 60px;
+  padding: 8px;
+  font-size: 1rem;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.quantity-form button {
+  background-color: #a8d5ba; /* Pastel green */
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quantity-form button:hover {
+  background-color: #85c1a0; /* Lighter pastel green */
+}
+
+/* Cart summary */
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a8d5ba; /* Pastel green */
+}
+
+.cart-summary button {
+  background-color: #f7c9d1; /* Soft pastel pink */
+  padding: 12px 25px;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-summary button:hover {
+  background-color: #f1a3b2; /* Slightly darker pastel pink */
+}
+
+/* Empty cart message */
+.cart p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #a8d5ba; /* Pastel green */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .cart-table th,
+  .cart-table td {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .cart h1 {
+    font-size: 2rem;
+  }
+
+  .cart-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-summary button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
